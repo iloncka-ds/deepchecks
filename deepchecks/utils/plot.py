@@ -19,8 +19,8 @@ __all__ = ['create_colorbar_barchart_for_check', 'shifted_color_map', 'colors', 
 
 DEFAULT_DATASET_NAMES = ('Train', 'Test')
 
-colors = {DEFAULT_DATASET_NAMES[0]: '#00008b',  # dark blue
-          DEFAULT_DATASET_NAMES[1]: '#69b3a2', 'Baseline': '#b287a3', 'Generated': '#2191FB'}
+colors = {DEFAULT_DATASET_NAMES[0]: '#003b47',  # dark blue #00008b
+          DEFAULT_DATASET_NAMES[1]: '#023c46', 'Baseline': '#073f43', 'Generated': '#043d45'} # green #69b3a2 #b287a3 #2191FB
 # iterable for displaying colors on metrics
 metric_colors = ['rgb(102, 197, 204)',
                  'rgb(220, 176, 242)',
@@ -32,14 +32,14 @@ metric_colors = ['rgb(102, 197, 204)',
                  'rgb(180, 151, 231)']
 
 feature_distribution_colors = {
-    'measure': '#00008b',  # dark blue
-    'feature': 'rgba(105, 179, 162, 1)'
+    'measure': '#003b47',  # dark blue #00008b
+    'feature': 'rgba(2, 60, 70, 1)' # rgba(105, 179, 162, 1)
 }
 
-common_and_outlier_colors = {'common': 'rgba(105, 179, 162, 1)',
-                             'outliers': 'rgba(179, 106, 106, 1)',
-                             'common_fill': 'rgba(105, 179, 162, 0.7)',
-                             'outliers_fill': 'rgba(179, 106, 106, 0.7)'}
+common_and_outlier_colors = {'common': 'rgba(2, 60, 70, 1)', # rgba(105, 179, 162, 1)
+                             'outliers': 'rgba(254, 136, 177, 1)', # 179, 106, 106, 1
+                             'common_fill': 'rgba(2, 60, 70, 0.7)',
+                             'outliers_fill': 'rgba(254, 136, 177, 0.7)'}
 
 
 def create_colorbar_barchart_for_check(x: np.ndarray, y: np.ndarray, ylabel: str = 'Result', xlabel: str = 'Features',
