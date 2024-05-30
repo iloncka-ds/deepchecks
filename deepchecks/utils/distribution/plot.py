@@ -73,10 +73,10 @@ def drift_score_bar_traces(drift_score: float, bar_max: float = None) -> Tuple[L
     Tuple[List[go.Bar], Dict, Dict]
         list of plotly bar traces.
     """
-    traffic_light_colors = [((0, 0.1), '#01B8AA'),
-                            ((0.1, 0.2), '#F2C80F'),
-                            ((0.2, 0.3), '#FE9666'),
-                            ((0.3, 1), '#FD625E')
+    traffic_light_colors = [((0, 0.1), '#6DB36D'), # #01B8AA
+                            ((0.1, 0.2), '#F9F871'), # #F2C80F
+                            ((0.2, 0.3), '#FF8749'), # #FE9666
+                            ((0.3, 1), '#BB5B3E') # #FD625E
                             ]
 
     bars = []
